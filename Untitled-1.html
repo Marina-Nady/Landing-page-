@@ -1,0 +1,20 @@
+<li class="link active" id="current">
+    <a href="#section1" onclick="current(event, 'section1');">Section 1</a></li>
+<li  class="link" >
+    <a href="#section2" onclick="current(event, 'section2')">Section 2</a></li>
+<li  class="link" >
+    <a href="#section3" onclick="current(event, 'section3')">Section 3</a></li>
+<li  class="link" >
+    <a href="#section4" onclick="current(event, 'section4')">Section 4</a></li>
+
+
+    function addLi(){
+
+        const navbar_link = document.createElement("a");
+        for (let i = 0 ; i < 4 ; i++){
+            const navbar_li = document.createElement("li");
+            navbar_li.innerHTML = '<a href="#Section1"> Section </a>';
+            navBar.appendChild(navbar_li);
+        }
+    }
+    
